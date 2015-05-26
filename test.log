@@ -1,0 +1,45 @@
+=== RUN TestGetQuote
+--- PASS: TestGetQuote (0.71s)
+=== RUN TestClientTimeout
+--- PASS: TestClientTimeout (0.00s)
+=== RUN TestCreateDelivery
+--- PASS: TestCreateDelivery (1.24s)
+=== RUN TestGetDeliveries
+--- PASS: TestGetDeliveries (0.60s)
+=== RUN TestGetAllDeliveries
+--- PASS: TestGetAllDeliveries (1.24s)
+=== RUN TestGetOngoingDeliveries
+--- PASS: TestGetOngoingDeliveries (0.44s)
+=== RUN TestGetDelivery
+--- PASS: TestGetDelivery (1.14s)
+=== RUN TestCancelDelivery
+--- PASS: TestCancelDelivery (1.48s)
+=== RUN TestReturnDelivery
+Delivery created, waiting for dropoff state before triggering return (~100sec)
+.........................................
+--- PASS: TestReturnDelivery (104.45s)
+=== RUN TestError
+--- PASS: TestError (0.45s)
+=== RUN TestWebhook
+--- PASS: TestWebhook (0.11s)
+=== RUN TestWebhookUnsupported
+--- PASS: TestWebhookUnsupported (0.11s)
+PASS
+coverage: 77.5% of statements
+ok  	github.com/jasonmoo/ghostmates	112.003s
+github.com/jasonmoo/ghostmates/client.go:141:	NewManifest		100.0%
+github.com/jasonmoo/ghostmates/client.go:149:	NewDeliverySpot		100.0%
+github.com/jasonmoo/ghostmates/client.go:157:	NewClient		100.0%
+github.com/jasonmoo/ghostmates/client.go:176:	GetQuote		90.0%
+github.com/jasonmoo/ghostmates/client.go:210:	CreateDelivery		71.4%
+github.com/jasonmoo/ghostmates/client.go:259:	GetOngoingDeliveries	100.0%
+github.com/jasonmoo/ghostmates/client.go:263:	GetDeliveries		75.0%
+github.com/jasonmoo/ghostmates/client.go:313:	GetDelivery		70.0%
+github.com/jasonmoo/ghostmates/client.go:337:	CancelDelivery		70.0%
+github.com/jasonmoo/ghostmates/client.go:361:	ReturnDelivery		70.0%
+github.com/jasonmoo/ghostmates/errors.go:35:	NewError		100.0%
+github.com/jasonmoo/ghostmates/errors.go:44:	Error			100.0%
+github.com/jasonmoo/ghostmates/transport.go:9:	RoundTrip		100.0%
+github.com/jasonmoo/ghostmates/transport.go:13:	CancelRequest		100.0%
+github.com/jasonmoo/ghostmates/webhook.go:90:	NewWebhook		70.7%
+total:						(statements)		77.5%
